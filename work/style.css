@@ -1,0 +1,62 @@
+* {
+  font-family: consolas;
+}
+
+.section1 {
+  display: none;
+  opacity: 0;
+}
+section {
+  transition: 0.5s;
+}
+section:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 400px;
+  height: 100%;
+  background: #81d4fa;
+  transform-origin: left;
+  transform: skewX(-55deg);
+  z-index: 0;
+  overflow: hidden;
+}
+.brand-logo {
+  margin-left: 30px;
+}
+nav .nav-wrapper ul {
+  margin-right: 40px;
+}
+section h4 {
+  position: relative;
+  z-index: 100;
+  font-size: 40px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.loader {
+  display: flex;
+  font-family: "consolas", cursive;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 60px;
+  font-weight: 500;
+  color: teal;
+}
+
+.loader::after {
+  content: "\2026";
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  animation: dots steps(4, end) 2s infinite;
+  width: 0px;
+}
+
+@keyframes dots {
+  to {
+    width: 0.8em;
+    /* width: 40px; */
+  }
+}

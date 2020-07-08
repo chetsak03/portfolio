@@ -1,0 +1,248 @@
+.loader {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  min-height: 100vh;
+  z-index: 10000;
+}
+
+.loader > span {
+  display: inline-block;
+  background-color: #004d40;
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  margin: 0 8px;
+  transform: translate3d(0);
+  animation: bounce 0.6s infinite alternate;
+  z-index: 10000;
+}
+@keyframes bounce {
+  to {
+    width: 16px;
+    height: 16px;
+    transform: translate3d(0, -16px, 0);
+  }
+}
+.loader > span:nth-child(2) {
+  background-color: #4db6ac;
+  animation-delay: 0.2s;
+  z-index: 10000;
+}
+.loader > span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.brand-logo {
+  margin-left: 30px;
+}
+nav .nav-wrapper ul {
+  margin-right: 40px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: consolas;
+}
+.main {
+  display: none;
+  opacity: 0;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background: #37474f;
+  transition: opacity 1s ease-in;
+}
+.main:before {
+  content: " Technical Skills";
+  position: absolute;
+  top: 30px;
+  left: 100px;
+  height: 300px;
+  width: 300px;
+  color: rgba(255, 255, 255, 0.1);
+  font-size: 120px;
+  /* transition: 1s; */
+  opacity: 0;
+  animation: fadeInRight 2s ease-in forwards;
+}
+@keyframes fadeInRight {
+  0% {
+    transform: translateX(150px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.contain {
+  position: relative;
+  width: 500px;
+}
+
+.contain .skills {
+  position: relative;
+  display: flex;
+  margin: 20px 0;
+  padding: 18px 15px 13px;
+  background: linear-gradient(#616161 0%, #333 10%, #222);
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid #000;
+  transition: 0.5s;
+}
+.contain:hover .skills {
+  opacity: 0.05;
+}
+.contain .skills:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+.contain .skills:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  z-index: 10;
+}
+.contain .skills .Name {
+  position: relative;
+  width: 110px;
+  text-align: right;
+  color: #fff;
+  margin-top: -2px;
+  text-transform: uppercase;
+}
+.contain .skills .Value {
+  position: relative;
+  width: 40px;
+  text-align: left;
+  color: #fff;
+  margin-top: -2px;
+  text-transform: uppercase;
+}
+.contain .skills .percent {
+  position: relative;
+  width: calc(100% - 150px);
+  height: 20px;
+  margin: 0 10px;
+  border-radius: 10px;
+  background: #151515;
+  box-shadow: inset 0 0 10px #000;
+}
+.contain .skills .percent .progressing {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: inset 0 0 2px #000;
+  animation: animate 4s ease-in-out forwards;
+}
+
+@keyframes animate {
+  from {
+    width: 0;
+  }
+}
+.contain .skills:nth-child(1) .percent .progressing {
+  background: linear-gradient(45deg, #22c1c3, #fdbb2d);
+}
+.contain .skills:nth-child(2) .percent .progressing {
+  background: linear-gradient(45deg, #1fe6ff, #673ab7);
+}
+.contain .skills:nth-child(3) .percent .progressing {
+  background: linear-gradient(45deg, #3bc0ff, #33ff00);
+}
+.contain .skills:nth-child(4) .percent .progressing {
+  background: linear-gradient(45deg, #ffee54, #ff00ca);
+}
+.contain .skills:nth-child(5) .percent .progressing {
+  background: linear-gradient(45deg, #22ffde, #2196f3);
+}
+.contain .skills:nth-child(6) .percent .progressing {
+  background: linear-gradient(45deg, #6d6027, #d3cbb8);
+}
+.contain .skills:nth-child(7) .percent .progressing {
+  background: linear-gradient(45deg, #e1eec3, #f05053);
+}
+
+.section2 {
+  display: none;
+  opacity: 0;
+  height: auto;
+  background: #455a64;
+  transition: opacity 1s ease-in;
+}
+/* .section2:before {
+  content: "Other Technical Skills";
+  position: absolute;
+  top: 600px;
+  left: 100px;
+  height: 300px;
+  width: 300px;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 100px;
+
+  animation: fadeInRight 4s ease-in forwards;
+} */
+/* section2 .container .row .col .imgtext */
+.section2 .row span {
+  color: #fff;
+  font-size: 17px;
+  margin-left: 60px;
+}
+
+@media (max-width: 991px) {
+  .main {
+    width: 100%;
+  }
+  .main:before {
+    content: " Technical Skills";
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    height: 200px;
+    width: 200px;
+    font-size: 80px;
+    opacity: 0;
+    animation: fadeInRight 2s ease-in forwards;
+  }
+  .contain:hover .skills {
+    opacity: 0.05;
+  }
+  .contain .skills:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  .contain {
+    position: relative;
+    width: 300px;
+  }
+
+  .contain .skills {
+    position: relative;
+    display: flex;
+    margin: 13px 0;
+    padding: 13px 11px 10px;
+    background: linear-gradient(#616161 0%, #333 10%, #222);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid #000;
+    transition: 0.5s;
+  }
+  .section2 .row span {
+    display: none;
+  }
+  .section2 .row .col {
+    margin-bottom: 10px;
+  }
+}
