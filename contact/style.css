@@ -7,3 +7,8 @@
 nav .nav-wrapper ul {
   margin-right: 40px;
 }
+@media (max-width: 991px) {
+  .brand-logo {
+    margin: 0;
+  }
+}

@@ -72,6 +72,9 @@ section h4 {
 }
 
 @media (max-width: 991px) {
+  .brand-logo {
+    margin: 0;
+  }
   section:before {
     content: "";
     position: absolute;
