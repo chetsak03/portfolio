@@ -13,19 +13,20 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
     />
-    <title>Skill Section</title>
+    <link rel="icon" type="image/x-icon" href="../img/nameico.jpg" />
+    <title>Welcome | Devs</title>
   </head>
   <body>
     <div class="navbar-fixed">
-      <nav class="blue-grey lighten-2">
+      <nav class="blue">
         <!-- <div class="container"> -->
         <div class="nav-wrapper">
           <a href="#" class="brand-logo brandname">
             Devs
           </a>
 
-          <a href="#" class="sidenav-trigger" data-target="mobile-nav">
-            <i class="material-icons">menu</i>
+          <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            
           </a>
           <ul class="right hide-on-med-and-down navadjust">
             <li>
@@ -44,9 +45,18 @@
         <!-- </div> -->
       </nav>
     </div>
-    <ul class="sidenav" id="mobile-nav">
-      <h5 class="center">Devs</h5>
-      <hr />
+    <ul id="slide-out" class="sidenav">
+      <li><div class="user-view">
+        <div class="background">
+          <img src="../img/logoback.jpg">
+        </div>
+        <a href="#user"><img class="circle" src="../img/logo.png"></a>
+        <a href="#name"><span class="white-text name">Chetan Banchhod</span></a>
+        <a href="#email"><span class="white-text email">chetan31995@gmail.com</span></a>
+      </div></li>
+      <li><a href="https://github.com/chetsak03"><i class="material-icons">cloud</i> Check Github</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="subheader">Devs</a></li>
       <li>
         <a href="../index.html">H o m e</a>
       </li>
@@ -234,8 +244,8 @@
           setTimeout(() => {
             main.style.opacity = 1;
             section2.style.opacity = 1;
-          }, 1000);
-        }, 2000);
+          }, 500);
+        }, 1000);
       }
       init();
       const SideNav = document.querySelector(".sidenav");

@@ -399,4 +399,8 @@ a.readMore {
   .header {
     padding: 0 50px;
   }
+  .bulb {
+    display: none;
+    opacity: 0;
+  }
 }
