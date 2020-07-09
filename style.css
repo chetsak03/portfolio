@@ -405,4 +405,20 @@ a.readMore {
     display: none;
     opacity: 0;
   }
+  .sci {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sci li {
+    opacity: 0;
+    margin: 15px 0;
+    text-align: center;
+    list-style: none;
+    animation: fadeInBottom 0.5s linear forwards;
+    animation-delay: 5s;
+  }
 }
