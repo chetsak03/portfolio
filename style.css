@@ -395,7 +395,9 @@ a.readMore {
     padding: 50px 80px 50px 50px;
     height: 100vh;
   }
-
+  section .bannerText {
+    top: 35%;
+  }
   .header {
     padding: 0 50px;
   }
