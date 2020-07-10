@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fondamento", cursive;
+}
+section:before {
+  content: "";
+  position: absolute;
+  height: 100vh;
+  width: 50%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  /* transform-origin: top; */
+  background: lightblue;
+  z-index: 0;
+}
+section {
+  height: 100vh;
+  border-bottom: solid 30px lightblue;
+}
+section h2 {
+  position: absolute;
+  font-size: 60px;
+  top: 24%;
+  left: 18%;
+  color: white;
+  opacity: 0.8;
+  text-transform: uppercase;
+  z-index: 100000;
+}
+section .intro {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  height: 50vh;
+  width: 500px;
+  left: 52%;
+  top: 25%;
+  line-height: 30px;
+  padding: 40px 40px;
+}
+section .intro:before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: lightblue;
+  left: 0;
+  top: 20px;
+  opacity: 0.6;
+  border-radius: 10px;
+}
+
+section .follow {
+  position: absolute;
+  height: 200px;
+  width: 100px;
+  right: 0;
+  top: 30%;
+}
+section .follow span {
+  position: absolute;
+  z-index: 100;
+  margin-top: 20px;
+  font-size: 14.5px;
+  text-transform: uppercase;
+}
+section .follow:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: lightblue;
+}
+
+section .intro p {
+  width: 500px;
+}
+section .intro h4 {
+  font-size: 35px;
+  margin-bottom: 25px;
+  z-index: 10000;
+  text-transform: uppercase;
+}
+section .follow .sci {
+  position: absolute;
+  /* bottom: 15px; */
+  right: 13px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+section .follow .sci li {
+  margin: 5px 0;
+  text-align: center;
+  list-style: none;
+}
+.sci li a {
+  font-size: 1.2em;
+  color: #000;
+}
+
+section .intro h5 {
+  border-top: 2px solid lightblue;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+section .img {
+  position: absolute;
+  height: 230px;
+  width: 230px;
+  left: 37%;
+  top: 33%;
+}
+section .img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+}
+section .imgone {
+  position: absolute;
+  height: 230px;
+  width: 230px;
+  left: 27%;
+  top: 25%;
+}
+section .imgone img {
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  opacity: 0.1;
+}
+@media (max-width: 991px) {
+  section {
+    height: 100vh;
+  }
+  section .imgone {
+    display: none;
+  }
+
+  section h2 {
+    font-size: 25px;
+    top: 0;
+    left: 1%;
+  }
+  section .img {
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    left: 30%;
+    top: 7%;
+  }
+  section .img img {
+    height: 100%;
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 30px;
+  }
+  section .intro {
+    text-align: left;
+    height: 40vh;
+    width: 100px;
+    left: 0;
+    top: 45%;
+    line-height: 20px;
+    padding: 10px 10px;
+    /* background: blue; */
+  }
+  section .intro h4 {
+    font-size: 23px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+  }
+  section .intro h5 {
+    font-size: 20px;
+    margin-left: 20px;
+    border-top: none;
+    border-bottom: solid 2px lightseagreen;
+    width: 200px;
+  }
+  section .intro:before {
+    display: none;
+  }
+  section .intro p {
+    width: 50vh;
+  }
+  section .follow {
+    height: 200px;
+    top: 5%;
+  }
+  section .follow span {
+    margin-top: 20px;
+    font-size: 13px;
+  }
+  section .follow:before {
+    height: 90%;
+    border-radius: 10px;
+  }
+  section .follow .sci {
+    right: 20px;
+    margin-top: 30px;
+  }
+  section .follow .sci {
+    margin-top: 40px;
+  }
+  section .follow .sci li {
+    margin: 3px 0;
+  }
+  .sci li a {
+    font-size: 1.2em;
+    color: #000;
+  }
+}
