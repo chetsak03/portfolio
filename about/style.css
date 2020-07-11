@@ -29,7 +29,7 @@ section .home {
 section h2 {
   position: absolute;
   font-size: 60px;
-  top: 24%;
+  top: 20%;
   left: 18%;
   color: white;
   opacity: 0.8;
@@ -49,6 +49,13 @@ section .intro {
   line-height: 30px;
   padding: 40px 40px;
 }
+section .intro .line {
+  position: relative;
+  border-bottom: 1px solid lightseagreen;
+  width: 270px;
+  margin-left: 150px;
+  padding: 0;
+}
 section .intro:before {
   content: "";
   position: absolute;
@@ -56,9 +63,9 @@ section .intro:before {
   height: 60px;
   background: lightblue;
   left: 7px;
-  top: 70px;
+  top: 40px;
   opacity: 0.6;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 
 section .follow {
@@ -66,7 +73,7 @@ section .follow {
   height: 200px;
   width: 100px;
   right: 0;
-  top: 30%;
+  top: 26%;
 }
 section .follow span {
   position: absolute;
@@ -113,7 +120,8 @@ section .follow .sci li {
 }
 
 section .intro h5 {
-  border-top: 2px solid lightblue;
+  margin-top: 0;
+  /* border-top: 2px solid lightblue; */
   font-size: 20px;
   margin-bottom: 20px;
 }
@@ -126,7 +134,7 @@ section .img {
   background: url(../img/profile2.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 /* section .img img {
   height: 100%;
