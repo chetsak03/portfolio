@@ -204,13 +204,14 @@ section .imgone img {
     width: 130px;
     left: 30%;
     top: 20%;
+    border-radius: 50%;
   }
-  section .img img {
+  /* section .img img {
     height: 100%;
     width: 100%;
     margin-top: 30px;
     border-radius: 30px;
-  }
+  } */
   section .intro {
     text-align: left;
     height: 40vh;
