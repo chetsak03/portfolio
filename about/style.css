@@ -161,6 +161,14 @@ section .imgone img {
   section {
     height: 100vh;
   }
+  section .intro .line {
+    position: absolute;
+    border-bottom: 1px solid lightseagreen;
+    width: 180px;
+    top: 45%;
+    margin-left: 110px;
+    padding: 0;
+  }
   section .home {
     position: relative;
     left: 45%;
@@ -210,7 +218,6 @@ section .imgone img {
     font-size: 20px;
     margin-left: 20px;
     border-top: none;
-    border-bottom: solid 2px lightseagreen;
     width: 200px;
   }
   section .intro:before {
