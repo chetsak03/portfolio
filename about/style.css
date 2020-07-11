@@ -158,12 +158,15 @@ section .imgone img {
   background-position: 50% 50%;
 }
 @media (max-width: 991px) {
+  body {
+    max-height: 100vh;
+  }
   section {
-    height: 95vh;
-    border-bottom: solid 30px lightblue;
+    height: 100vh;
+    border-bottom: solid 90px lightblue;
   }
   section:before {
-    height: 95vh;
+    height: 100vh;
   }
   section .intro .line {
     position: absolute;
