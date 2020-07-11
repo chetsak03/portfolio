@@ -163,7 +163,7 @@ section .imgone img {
   }
   section {
     height: 100vh;
-    border-bottom: solid 90px lightblue;
+    border-bottom: solid 30px lightblue;
   }
   section:before {
     height: 100vh;
@@ -181,8 +181,13 @@ section .imgone img {
     left: 45%;
     font-size: 20px;
     text-decoration: none;
-    border-bottom: 1px solid teal;
-    border-left: 1px solid teal;
+    padding: 1px 4px;
+    border: 1px solid teal;
+    border-radius: 5px;
+  }
+  section .home:hover {
+    background: #000;
+    color: #fff;
   }
   section .imgone {
     display: none;
@@ -198,7 +203,7 @@ section .imgone img {
     height: 130px;
     width: 130px;
     left: 30%;
-    top: 15%;
+    top: 20%;
   }
   section .img img {
     height: 100%;
