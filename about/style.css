@@ -20,6 +20,12 @@ section {
   height: 100vh;
   border-bottom: solid 30px lightblue;
 }
+section .home {
+  position: relative;
+  left: 50px;
+  font-size: 25px;
+  text-decoration: none;
+}
 section h2 {
   position: absolute;
   font-size: 60px;
@@ -39,7 +45,7 @@ section .intro {
   height: 50vh;
   width: 500px;
   left: 52%;
-  top: 25%;
+  top: 20%;
   line-height: 30px;
   padding: 40px 40px;
 }
@@ -49,10 +55,10 @@ section .intro:before {
   width: 60px;
   height: 60px;
   background: lightblue;
-  left: 0;
-  top: 20px;
+  left: 7px;
+  top: 70px;
   opacity: 0.6;
-  border-radius: 10px;
+  border-radius: 50%;
 }
 
 section .follow {
@@ -117,12 +123,16 @@ section .img {
   width: 230px;
   left: 37%;
   top: 33%;
+  background: url(../img/profile2.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
 }
-section .img img {
+/* section .img img {
   height: 100%;
   width: 100%;
-  border-radius: 30px;
-}
+  border-radius: 50%;
+} */
 section .imgone {
   position: absolute;
   height: 230px;
@@ -133,12 +143,23 @@ section .imgone {
 section .imgone img {
   height: 100%;
   width: 100%;
-  border-radius: 30px;
+  border-radius: 50%;
   opacity: 0.1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 @media (max-width: 991px) {
   section {
     height: 100vh;
+  }
+  section .home {
+    position: relative;
+    left: 200px;
+    font-size: 25px;
+    text-decoration: none;
+    border-bottom: 1px solid teal;
+    border-left: 1px solid teal;
   }
   section .imgone {
     display: none;
