@@ -17,6 +17,11 @@
     <title>Welcome | Devs</title>
   </head>
   <body>
+    <div class="loader">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <section class="section">
       <a href="../index.html" class="home">Home</a>
       <h2>About Me</h2>
@@ -59,5 +64,22 @@
       </div>
     </section>
     <script src="../materialize/js/materialize.min.js"></script>
+    <script>
+      function init() {
+        const loader = document.querySelector(".loader");
+        const section = document.querySelector(".section");
+
+        setTimeout(() => {
+          loader.style.opacity = 0;
+          loader.style.display = "none";
+          section.style.display = "block";
+
+          setTimeout(() => {
+            section.style.opacity = 1;
+          }, 1000);
+        }, 2000);
+      }
+      init();
+    </script>
   </body>
 </html>
