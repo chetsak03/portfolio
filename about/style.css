@@ -320,7 +320,7 @@ section .imgone img {
   }
   .foot {
     position: absolute;
-    bottom: 30px;
+    bottom: 15px;
     width: 100vw;
     height: 30px;
   }
