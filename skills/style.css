@@ -203,7 +203,17 @@ nav .nav-wrapper ul {
   font-size: 17px;
   margin-left: 60px;
 }
-
+.foot {
+  position: relative;
+  bottom: 0;
+  width: 100vw;
+  height: 30px;
+  background: lightslategray;
+}
+.foot .footText {
+  font-size: 20px;
+  margin-left: 40%;
+}
 @media (max-width: 991px) {
   .brand-logo {
     margin: 0;
@@ -250,5 +260,17 @@ nav .nav-wrapper ul {
   }
   .section2 .row .col {
     margin-bottom: 10px;
+  }
+
+  .foot {
+    position: relative;
+    bottom: 0;
+    width: 100vw;
+    height: 30px;
+    background: lightslategray;
+  }
+  .foot .footText {
+    font-size: 16px;
+    margin-left: 27%;
   }
 }

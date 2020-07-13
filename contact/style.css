@@ -1,14 +1,39 @@
 * {
   font-family: consolas;
 }
+body {
+  transition: 0.5s;
+}
 .brand-logo {
   margin-left: 30px;
 }
 nav .nav-wrapper ul {
   margin-right: 40px;
 }
+.foot {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 30px;
+  background: lightgray;
+}
+.foot .footText {
+  font-size: 20px;
+  margin-left: 40%;
+}
 @media (max-width: 991px) {
   .brand-logo {
     margin: 0;
+  }
+  .foot {
+    position: relative;
+    bottom: 0;
+    width: 100vw;
+    height: 30px;
+    background: lightgray;
+  }
+  .foot .footText {
+    font-size: 16px;
+    margin-left: 25%;
   }
 }

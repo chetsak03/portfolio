@@ -70,7 +70,17 @@ section h4 {
 .loader > span:nth-child(3) {
   animation-delay: 0.4s;
 }
-
+.foot {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 30px;
+  background: lightgray;
+}
+.foot .footText {
+  font-size: 20px;
+  margin-left: 40%;
+}
 @media (max-width: 991px) {
   .brand-logo {
     margin: 0;
@@ -86,5 +96,16 @@ section h4 {
     transform: skewX(-25deg);
     z-index: 0;
     overflow: hidden;
+  }
+  .foot {
+    position: relative;
+    bottom: 0;
+    width: 100vw;
+    height: 30px;
+    background: lightgray;
+  }
+  .foot .footText {
+    font-size: 16px;
+    margin-left: 26%;
   }
 }

@@ -4,7 +4,9 @@
   box-sizing: border-box;
   font-family: "Fondamento", cursive;
 }
-
+body {
+  height: 100vh;
+}
 .loader {
   display: flex;
   justify-content: center;
@@ -198,6 +200,16 @@ section .imgone img {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
+.foot {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 30px;
+}
+.foot .footText {
+  font-size: 20px;
+  margin-left: 40%;
+}
 @media (max-width: 991px) {
   body {
     max-height: 100vh;
@@ -305,5 +317,15 @@ section .imgone img {
   .sci li a {
     font-size: 1.2em;
     color: #000;
+  }
+  .foot {
+    position: absolute;
+    bottom: 30px;
+    width: 100vw;
+    height: 30px;
+  }
+  .foot .footText {
+    font-size: 15px;
+    margin-left: 25%;
   }
 }
