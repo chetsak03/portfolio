@@ -216,7 +216,7 @@ section .imgone img {
   }
   section {
     height: 100vh;
-    border-bottom: solid 80px lightblue;
+    border-bottom: solid 40px lightblue;
   }
   section:before {
     height: 100vh;
